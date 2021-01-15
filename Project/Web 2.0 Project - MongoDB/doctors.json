@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5fddfab5c82111e0fc57c4d9"
+  },
+  "firstName": "John",
+  "lastName": "Tan",
+  "gender": "Male",
+  "specialisation": "Cardiology",
+  "qualification": "MBBS(S'pore)",
+  "email": "johntan@health.com",
+  "designation": "Consultant",
+  "onDutyRoomNo": "10"
+},{
+  "_id": {
+    "$oid": "5fde089869c97339a0b29a4c"
+  },
+  "firstName": "Junice",
+  "lastName": "Wong",
+  "gender": "Female",
+  "specialisation": "Endocrinology",
+  "qualification": "MBBS(S'pore)",
+  "email": "junicewong@health.com",
+  "designation": "Consultant",
+  "onDutyRoomNo": "11"
+},{
+  "_id": {
+    "$oid": "5fde09a569c97339a0b29a4d"
+  },
+  "firstName": "Andrew",
+  "lastName": "Li",
+  "gender": "Male",
+  "specialisation": "Dentistry",
+  "qualification": "BDS(Singapore)",
+  "email": "andrewli@health.com",
+  "designation": "Consultant",
+  "onDutyRoomNo": "12"
+},{
+  "_id": {
+    "$oid": "5fde0ad369c97339a0b29a4e"
+  },
+  "firstName": "June",
+  "lastName": "Koh",
+  "gender": "Female",
+  "specialisation": "General Medicine",
+  "qualification": "MBBS",
+  "email": "junekoh@health.com",
+  "designation": "Consultant",
+  "onDutyRoomNo": "13"
+}]

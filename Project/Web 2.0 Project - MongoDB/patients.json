@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "5fde0bc269c97339a0b29a4f"
+  },
+  "_apptid": "1234",
+  "firstName": "Tan ",
+  "lastName": "Ah Kow",
+  "gender": "Male",
+  "dob": "1st March 1950",
+  "contactNo": "92154456",
+  "height": "170cm",
+  "weight": "65kg",
+  "wardNo": "1",
+  "password": "password",
+  "username": "tanahkow"
+},{
+  "_id": {
+    "$oid": "5fde0d1e69c97339a0b29a50"
+  },
+  "_apptid": "1235",
+  "firstName": "Mary",
+  "lastName": "Lim",
+  "gender": "Female",
+  "dob": "24th April 1975",
+  "contactNo": "97876654",
+  "height": "155cm",
+  "weight": "55kg",
+  "wardNo": "2",
+  "password": "password",
+  "username": "marylim"
+},{
+  "_id": {
+    "$oid": "5fde0ef069c97339a0b29a52"
+  },
+  "_apptid": "1236",
+  "firstName": "Tom",
+  "lastName": "Ang",
+  "gender": "Male",
+  "dob": "7th January 1985",
+  "contactNo": "98989543",
+  "height": "180cm",
+  "weight": "70kg",
+  "wardNo": "3",
+  "password": "password",
+  "username": "tomang"
+},{
+  "_id": {
+    "$oid": "5fde0f8569c97339a0b29a53"
+  },
+  "_apptid": "1237",
+  "firstName": "Lee",
+  "lastName": "Mui Mui",
+  "gender": "Female",
+  "dob": "16th May 1940",
+  "contactNo": "81763676",
+  "height": "160cm",
+  "weight": "45kg",
+  "wardNo": "4",
+  "password": "password",
+  "username": "leemuimui"
+},{
+  "_id": {
+    "$oid": "5fde1c9b35ad8f0614b94109"
+  },
+  "_apptid": "1238",
+  "firstName": "Chan",
+  "lastName": "Lee Meng",
+  "gender": "Female",
+  "dob": "7th Feb 1987",
+  "contactNo": "81111888",
+  "height": "157cm",
+  "weight": "41kg",
+  "wardNo": "",
+  "password": "password",
+  "username": "chanleemeng"
+},{
+  "_id": {
+    "$oid": "5fde1cf435ad8f0614b9410a"
+  },
+  "_apptid": "1239",
+  "firstName": "Dennis",
+  "lastName": "Quek",
+  "gender": "Male",
+  "dob": "17th Jan 1990",
+  "contactNo": "89098987",
+  "height": "176cm",
+  "weight": "65kg",
+  "wardNo": "",
+  "password": "password",
+  "username": "dennisquek"
+}]

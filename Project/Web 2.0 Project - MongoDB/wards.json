@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "5fde167869c97339a0b29a5b"
+  },
+  "wardClass": "A",
+  "numOfBeds": "1",
+  "status": [
+    "Available"
+  ]
+},{
+  "_id": {
+    "$oid": "5fde16bb69c97339a0b29a5d"
+  },
+  "wardClass": "B1",
+  "numOfBeds": "4",
+  "status": [
+    "Occupied",
+    "Occupied",
+    "Available",
+    "Available"
+  ]
+},{
+  "_id": {
+    "$oid": "5fde177769c97339a0b29a5e"
+  },
+  "wardClass": "B2",
+  "numOfBeds": "4",
+  "status": [
+    "Occupied",
+    "Occupied",
+    "Available",
+    "Available"
+  ]
+},{
+  "_id": {
+    "$oid": "5fde17d269c97339a0b29a5f"
+  },
+  "wardClass": "C",
+  "numOfBeds": "3",
+  "status": [
+    "Occupied",
+    "Occupied",
+    "Available"
+  ]
+}]

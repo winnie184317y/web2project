@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5fde187169c97339a0b29a60"
+  },
+  "_docid": "5fddfab5c82111e0fc57c4d9",
+  "_patientid": "",
+  "startTime": "10:00AM",
+  "endTime": "10.30AM",
+  "totalTimeTaken": 0.5,
+  "totalFees": 25,
+  "govtSubsidy": "20%",
+  "netFees": 20
+},{
+  "_id": {
+    "$oid": "5fde1bf235ad8f0614b94106"
+  },
+  "_docid": "5fde089869c97339a0b29a4c",
+  "_patientid": "",
+  "startTime": "10:00AM",
+  "endTime": "10.30AM",
+  "totalTimeTaken": 0.5,
+  "totalFees": 25,
+  "govtSubsidy": "20%",
+  "netFees": 20
+},{
+  "_id": {
+    "$oid": "5fde1c4135ad8f0614b94107"
+  },
+  "_docid": "5fde09a569c97339a0b29a4d",
+  "_patientid": "",
+  "startTime": "10:00AM",
+  "endTime": "10.30AM",
+  "totalTimeTaken": 0.5,
+  "totalFees": 25,
+  "govtSubsidy": "20%",
+  "netFees": 20
+},{
+  "_id": {
+    "$oid": "5fde1c5f35ad8f0614b94108"
+  },
+  "_docid": "5fde0ad369c97339a0b29a4e",
+  "_patientid": "",
+  "startTime": "10:00AM",
+  "endTime": "10.30AM",
+  "totalTimeTaken": 0.5,
+  "totalFees": 25,
+  "govtSubsidy": "20%",
+  "netFees": 20
+}]

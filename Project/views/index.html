@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 13 - Authentication</title>
+    <style>
+        .protectedSection,.unprotectedSection {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="protectedSection">
+        This is a protected section. You can only see this if you have logged in.
+        <button class="logoutBtn">Logout now</button>
+    </section>
+    <section class="unprotectedSection">
+        You are not allowed to view this resource. Click <a href="/login">here</a> to login
+    </section>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
