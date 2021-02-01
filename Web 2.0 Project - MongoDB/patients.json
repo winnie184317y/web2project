@@ -2,22 +2,21 @@
   "_id": {
     "$oid": "5fde0bc269c97339a0b29a4f"
   },
-  "_apptid": "1234",
-  "firstName": "Tan ",
+  "firstName": "Tan",
   "lastName": "Ah Kow",
   "gender": "Male",
   "dob": "1st March 1950",
-  "contactNo": "92154456",
-  "height": "170cm",
-  "weight": "65kg",
-  "wardNo": "1",
-  "password": "password",
-  "username": "tanahkow"
+  "contactNo": "999",
+  "height": "165cm",
+  "weight": "60kg",
+  "wardNo": "2",
+  "password": "tanahkow",
+  "username": "password",
+  "token": "6ca1ed473cea95195d352fa437e94941105081e8751f0248d3ca6faff707a599"
 },{
   "_id": {
     "$oid": "5fde0d1e69c97339a0b29a50"
   },
-  "_apptid": "1235",
   "firstName": "Mary",
   "lastName": "Lim",
   "gender": "Female",
@@ -32,7 +31,6 @@
   "_id": {
     "$oid": "5fde0ef069c97339a0b29a52"
   },
-  "_apptid": "1236",
   "firstName": "Tom",
   "lastName": "Ang",
   "gender": "Male",
@@ -47,7 +45,6 @@
   "_id": {
     "$oid": "5fde0f8569c97339a0b29a53"
   },
-  "_apptid": "1237",
   "firstName": "Lee",
   "lastName": "Mui Mui",
   "gender": "Female",
@@ -62,7 +59,6 @@
   "_id": {
     "$oid": "5fde1c9b35ad8f0614b94109"
   },
-  "_apptid": "1238",
   "firstName": "Chan",
   "lastName": "Lee Meng",
   "gender": "Female",
@@ -77,7 +73,6 @@
   "_id": {
     "$oid": "5fde1cf435ad8f0614b9410a"
   },
-  "_apptid": "1239",
   "firstName": "Dennis",
   "lastName": "Quek",
   "gender": "Male",

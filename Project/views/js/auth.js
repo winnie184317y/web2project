@@ -29,7 +29,7 @@ function login() {
         data:credentials
     })
     .done(function(data){
-        $(".statusMessage").text(data.message);
+        //$(".statusMessage").text(data.message);
         sessionStorage.authToken=data.token;
         document.location.href = '../';
     })
@@ -40,13 +40,13 @@ function login() {
 }
 function register() {
     var newPatient = {
-        name: $("#firstName").val(),
-        company: $("#lastName").val(),
-        company: $("#gender").val(),
-        company: $("#dob").val(),
-        company: $("#contactNo").val(),
-        company: $("#height").val(),
-        company: $("#weight").val(),
+        firstName: $("#firstName").val(),
+        lastName: $("#lastName").val(),
+        gender: $("#gender").val(),
+        dob: $("#dob").val(),
+        contactNo: $("#contactNo").val(),
+        height: $("#height").val(),
+        weight: $("#weight").val(),
         username: $("#username").val(),
         password: $("#password").val()
     }
@@ -56,7 +56,8 @@ function register() {
         data: newPatient
     })
     .done(function(data){
-        $(".statusMessage").text(data);
+        alert(data);
+        document.location.href = '../';
     })
     .fail(function (err){
         $(".statusMessage").text(err);

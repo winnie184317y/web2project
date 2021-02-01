@@ -1,41 +1,9 @@
 <html>
 <head>
     <title>Register Form</title>
-    <style>
-        .register-form {
-            width: 300px;
-            margin: 0 auto;
-            font-family: Tahoma, Geneva, sans-serif;
-        }
-        .register-form h1 {
-            text-align: center;
-            color: #4d4d4d;
-            font-size: 24px;
-            padding: 20px 0 20px 0;
-        }
-        .register-form input[type="password"],
-        .register-form input[type="text"] {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #dddddd;
-            margin-bottom: 15px;
-            box-sizing:border-box;
-        }
-        .register-form input[type="submit"] {
-            width: 100%;
-            padding: 15px;
-            background-color: #535b63;
-            border: 0;
-            box-sizing: border-box;
-            cursor: pointer;
-            font-weight: bold;
-            color: #ffffff;
-        }
-    </style>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Register Organizer</h1>
     <header>
         <nav>
             <li><a href="/">Home Page</a></li>
@@ -45,7 +13,7 @@
             <li><a href="#" class="logoutLink">Logout</a></li>
         </nav>
     </header>
-    <section class="register-form">
+    <section class="form">
         <h1>Register Form</h1>
         <!-- calls register function in auth.js -->
         <form onsubmit="return register();">
@@ -70,7 +38,6 @@
             <input type="submit" value="Register">
         </form>
     </section>
-    <div class="statusMessage"></div>
     <script src='/js/jquery.min.js'></script>
     <script src="/js/auth.js"></script>
 </body>

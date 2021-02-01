@@ -88,6 +88,7 @@ var database = {
             }
         })
     },
+    //logins
     login: function (u, p, callback) {
         patientsModel.findOne({ username: u, password: p }, callback);
     },

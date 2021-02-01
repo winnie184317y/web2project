@@ -33,7 +33,7 @@ function editAppointment() {
         }
     ).done(
         function (data) {
-            alert("Appointment updated!");
+            alert(data);
             document.location.href = '../';
         }
     ).fail(

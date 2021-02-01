@@ -2,15 +2,19 @@
   "_id": {
     "$oid": "5fde128b69c97339a0b29a56"
   },
-  "_patientid": "5fde0bc269c97339a0b29a4f",
-  "medicalCondition": "Heart Palpitations",
-  "admissionDate": "12th Dec 2020",
+  "_patientid": {
+    "$oid": "5fde0bc269c97339a0b29a4f"
+  },
+  "medicalCondition": "Heart blockage",
+  "admissionDate": "14th Dec 2020",
   "updatedBy": "John Tan"
 },{
   "_id": {
     "$oid": "5fde12ef69c97339a0b29a57"
   },
-  "_patientid": "5fde0d1e69c97339a0b29a50",
+  "_patientid": {
+    "$oid": "5fde0d1e69c97339a0b29a50"
+  },
   "medicalCondition": "Jaw Dislocation",
   "admissionDate": "23rd Dec 2020",
   "updatedBy": "Andrew Li"
@@ -18,7 +22,9 @@
   "_id": {
     "$oid": "5fde13b669c97339a0b29a58"
   },
-  "_patientid": "5fde0ef069c97339a0b29a52",
+  "_patientid": {
+    "$oid": "5fde0ef069c97339a0b29a52"
+  },
   "medicalCondition": "Diabetes",
   "admissionDate": "11th Nov 2020",
   "updatedBy": "Junice Wong"
@@ -26,7 +32,9 @@
   "_id": {
     "$oid": "5fde13f369c97339a0b29a59"
   },
-  "_patientid": "5fde0f8569c97339a0b29a53",
+  "_patientid": {
+    "$oid": "5fde0f8569c97339a0b29a53"
+  },
   "medicalCondition": "Flu",
   "admissionDate": "7th Dec 2020",
   "updatedBy": "June Koh"
