@@ -1,0 +1,20 @@
+h1 {
+    color:red;
+}
+
+.bookNewAppointment {
+    display:none;
+}
+
+nav {
+    display:flex;
+    list-style:none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+section {
+    margin-top: 20px;
+}

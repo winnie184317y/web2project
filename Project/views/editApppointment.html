@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <h1>Edit Appointment</h1>
+        <header>
+                <nav>
+                        <li><a href="/">Home Page</a></li>
+                        <li><a href="/login">Login as organizer</a></li>
+                        <li><a href="/register">Register as organizer</a></li>
+                        <li><a href="#" class="logoutLink">Logout</a></li>
+                </nav>
+        </header>
+        <section>
+                <form onsubmit="return editAppointment();">
+                        <label for="startTime">Start Time:</label>
+                        <input type="text" id="startTime" name="startTime">
+                        <br>
+                        <label for="endTime">End Time:</label>
+                        <input type="text" id="endTime" name="endTime">
+                        <br>
+                        <button type="submit">Save event</button>
+                </form>
+                <!-- <button class="deleteEventBtn">Delete event</button> -->
+        </section>
+        <br>
+        <script src='/js/jquery.min.js'></script>
+        <script src="/js/editAppointment.js"></script>
+        <script src="/js/auth.js"></script>
+</body>
+
+</html>

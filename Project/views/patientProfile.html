@@ -1,27 +1,27 @@
 <html>
 <head>
-    <title>Login Form</title>
+    <title>Profile Page</title>
     <style>
-        .login-form {
+        .profile {
             width: 300px;
             margin: 0 auto;
             font-family: Tahoma, Geneva, sans-serif;
         }
-        .login-form h1 {
+        .profile h1 {
             text-align: center;
             color: #4d4d4d;
             font-size: 24px;
             padding: 20px 0 20px 0;
         }
-        .login-form input[type="password"],
-        .login-form input[type="text"] {
+        .profile input[type="password"],
+        .profile input[type="text"] {
             width: 100%;
             padding: 15px;
             border: 1px solid #dddddd;
             margin-bottom: 15px;
             box-sizing:border-box;
         }
-        .login-form input[type="submit"] {
+        .profile input[type="submit"] {
             width: 100%;
             padding: 15px;
             background-color: #535b63;
@@ -44,19 +44,29 @@
             <li><a href="#" class="logoutLink">Logout</a></li>
         </nav>
     </header>
-    <section class="login-form">
-        <h1>Login Form</h1>
-        <form onsubmit="return login();">
+    <section class="profile">
+        <h1>Profile</h1>
+        <form onsubmit="return Profile();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="contactNo">Contact No:</label>
+            <input type="text" id="contactNo" name="contactNo"><br>
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height"><br>
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight"><br>
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username"><br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Login">
+            <input type="text" id="password" name="password"><br>
+            <input type="submit" value="Update">
         </form>
     </section>
-    <div class="statusMessage"></div>
     <script src='/js/jquery.min.js'></script>
     <script src="/js/auth.js"></script>
+    <script src="/js/patientProfile.js"></script>
 </body>
 
 </html>

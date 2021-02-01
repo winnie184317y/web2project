@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 13 - Authentication</title>
+    <title>Hospital Page</title>
     <style>
         .protectedSection,.unprotectedSection {
             display: none;
         }
     </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <h1>Hospital Page</h1>
+    <header>
+        <nav>
+            <li><a href="/">Home Page</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="#" class="logoutLink">Logout</a></li>
+        </nav>
+    </header>
     <section class="protectedSection">
-        This is a protected section. You can only see this if you have logged in.
-        <button class="logoutBtn">Logout now</button>
+        <section class="appointments"></section>
+        <!-- This is a protected section. You can only see this if you have logged in. -->
+        <!-- <button class="logoutBtn">Logout now</button> -->
+        <section>
+            <button class="bookAppointment">Add new event</button>
+        </section>
+        <div class="statusMessage"></div>
+        <br>
+        <section class="bookNewAppointment">
+            <form onsubmit="return bookAppointment();">
+                <label for="startTime">Start Time:</label>
+                <input type="text" id="startTime" name="startTime"><br>
+                <label for="endTime">End Time:</label>
+                <input type="text" id="endTime" name="endTime"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="statusMessage"></div>
+        </section>
     </section>
     <section class="unprotectedSection">
         You are not allowed to view this resource. Click <a href="/login">here</a> to login
     </section>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/auth.js"></script>
 </body>
 </html>

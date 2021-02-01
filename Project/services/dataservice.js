@@ -23,13 +23,12 @@ var database = {
                 //wards
                 wardsScema = schema({
                     wardClass:String,
-                    numofBeds:String,
-                    status:Array
+                    numOfBeds:String,
+                    status:String
                 });
                 wardsModel = connection.model('wards', wardsScema);
                 //patients
                 patientsScema = schema({
-                    _apptid:String,
                     firstName:String,
                     lastName:String,
                     gender:String,
@@ -57,8 +56,14 @@ var database = {
                 doctorsModel = connection.model('doctors', doctorsSchema);
                 //appointments
                 appointmentsScema = schema({
-                    _docid:String,
-                    _patientid:String,
+                    _docid:{
+                        type: schema.Types.ObjectId,
+                        ref: 'doctors'
+                    },
+                    _patientid:{
+                        type: schema.Types.ObjectId,
+                        ref: 'patients'
+                    },
                     startTime:String,
                     endTime:String,
                     totalTimeTaken:Number,
@@ -69,7 +74,10 @@ var database = {
                 appointmentsModel = connection.model('appointments', appointmentsScema);
                 //patientrecords
                 patientrecordsSchema = schema({
-                    _patientid:String,
+                    _patientid:{
+                        type: schema.Types.ObjectId,
+                        ref: 'patients'
+                    },
                     medicalCondition:String,
                     admissionDate:String,
                     updatedBy:String
@@ -98,14 +106,17 @@ var database = {
     },
     updateWards: function(id, nb, s, callback){
         var updatedWards = {
-            numofBeds:nb,
+            numOfBeds:nb,
             status:s
         };
         wardsModel.findByIdAndUpdate(id, updatedWards, callback);
     },
     //patients
-    getPatients: function(callback){
+    getAllPatient: function(callback){
         patientsModel.find({}, callback);
+    },
+    getPatients: function(pid, callback){
+        patientsModel.find({_id: pid}, callback);
     },
     addPatients: function(fn, ln, g, d, c, h, w, u, p, callback){
         var newPatient = new patientsModel({
@@ -121,17 +132,17 @@ var database = {
         });
         newPatient.save(callback);
     },
-    updatePatientsDetails: function(id, aid, fn, ln, c, h, w, wn, callback){
+    updatePatientsDetails: function(id, fn, ln, c, h, w, p, u, callback){
         var updatedPatientsDetails = {
-            _apptid:aid,
             firstName:fn,
             lastName:ln,
             contactNo:c,
             height:h,
             weight:w,
-            wardNo:wn
+            password: p,
+            username: u
         };
-        wardsModel.findByIdAndUpdate(id, updatedPatientsDetails, callback);
+        patientsModel.findByIdAndUpdate(id, updatedPatientsDetails, callback);
     },
     //doctors
     getDoctors: function(callback){
@@ -156,23 +167,20 @@ var database = {
     getAllAppointmentsById: function(id, callback){
         appointmentsModel.findById(id, callback);
     },
-    addAppointment: function(did, pid, st, et, ttt, tf, gs, nf, callback){
+    getAllAppointmentsByPatientsId: function(pid, callback){
+        // appointmentsModel.findOne({_patientid: pid}, callback);
+        appointmentsModel.find({_patientid: pid}).populate('_docid', ['firstName', 'lastName']).exec(callback);
+    },
+    addAppointment: function(pid, st, et, callback){
         var addAppintment = new appointmentsModel({
-            _docid:did,
             _patientid:pid,
             startTime:st,
-            endTime:et,
-            totalTimeTaken:ttt,
-            totalFees:tf,
-            govtSubsidy:gs,
-            netFees:nf
+            endTime:et
         });
         addAppintment.save(callback);
     },
-    updateAppointmentsById: function(id, did, pid, st, et, ttt, tf, gs, nf, callback){
+    updateAppointmentsById: function(id, st, et, ttt, tf, gs, nf, callback){
         var updatedAppintment = {
-            _docid:did,
-            _patientid:pid,
             startTime:st,
             endTime:et,
             totalTimeTaken:ttt,
@@ -186,12 +194,20 @@ var database = {
     getAllPatientsRecords: function(callback){
         patientrecordsModel.find({}, callback);
     },
-    getPatientsRecordsById: function(id, callback){
-        patientrecordsModel.findById(id, callback);
+    getPatientsRecordsByPatientsId: function(pid, callback){
+        patientrecordsModel.findOne({_patientid: pid}).populate('_patientid', ['firstName', 'lastName']).exec(callback);
     },
-    updatePatientsRecordsById: function(id, pid, mc, ad, ub, callback){
+    addPatientsRecords: function(pid, mc, ad, ub, callback){
+        var newPatientsRecords = new patientrecordsModel({
+            _patientid: pid,
+            medicalCondition: mc,
+            admissionDate: ad,
+            updatedBy: ub
+        });
+        newPatientsRecords.save(callback);
+    },
+    updatePatientsRecordsById: function(id, mc, ad, ub, callback){
         var updatedMedicalRecord = {
-            _patientid:pid,
             medicalCondition:mc,
             admissionDate:ad,
             updatedBy:ub

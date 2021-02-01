@@ -1,27 +1,27 @@
 <html>
 <head>
-    <title>Login Form</title>
+    <title>Register Form</title>
     <style>
-        .login-form {
+        .register-form {
             width: 300px;
             margin: 0 auto;
             font-family: Tahoma, Geneva, sans-serif;
         }
-        .login-form h1 {
+        .register-form h1 {
             text-align: center;
             color: #4d4d4d;
             font-size: 24px;
             padding: 20px 0 20px 0;
         }
-        .login-form input[type="password"],
-        .login-form input[type="text"] {
+        .register-form input[type="password"],
+        .register-form input[type="text"] {
             width: 100%;
             padding: 15px;
             border: 1px solid #dddddd;
             margin-bottom: 15px;
             box-sizing:border-box;
         }
-        .login-form input[type="submit"] {
+        .register-form input[type="submit"] {
             width: 100%;
             padding: 15px;
             background-color: #535b63;
@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <h1>Register Organizer</h1>
     <header>
         <nav>
             <li><a href="/">Home Page</a></li>
@@ -44,14 +45,29 @@
             <li><a href="#" class="logoutLink">Logout</a></li>
         </nav>
     </header>
-    <section class="login-form">
-        <h1>Login Form</h1>
-        <form onsubmit="return login();">
-            <label for="username">User Name:</label>
+    <section class="register-form">
+        <h1>Register Form</h1>
+        <!-- calls register function in auth.js -->
+        <form onsubmit="return register();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender"><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob"><br>
+            <label for="contactNo">Contact No:</label>
+            <input type="text" id="contactNo" name="contactNo"><br>
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height"><br>
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight"><br>
+            <label for="username">Username:</label>
             <input type="text" id="username" name="username"><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Login">
+            <input type="submit" value="Register">
         </form>
     </section>
     <div class="statusMessage"></div>
