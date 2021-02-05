@@ -220,7 +220,7 @@ var routes = function () {
     })
     //patientsrecords
     router.get('/api/patientsrecords', function (req, res) {
-        db.getPatientsRecords(function (err, patientsrecords) {
+        db.getAllPatientsRecords(function (err, patientsrecords) {
             if (err) {
                 res.status(500).send("Unable to get all patients records");
             } else {
