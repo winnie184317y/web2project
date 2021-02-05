@@ -1,6 +1,17 @@
 var appointmentId = 0;
 $(document).ready(function() {
-    //var token = sessionStorage.authToken;
+    var token = sessionStorage.authToken;
+    if (token == undefined) {
+        $(".logoutLink").hide();
+        $(".profile").hide();
+        $(".login").show();
+        $(".register").show()
+    } else {
+        $(".logoutLink").show();
+        $(".profile").show();
+        $(".login").hide();
+        $(".register").hide()
+    }
     var urlParams = new URLSearchParams(window.location.search);
     appointmentId = urlParams.get('id');
 

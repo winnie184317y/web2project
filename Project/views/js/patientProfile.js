@@ -1,5 +1,17 @@
 $(document).ready(function() {
     var token = sessionStorage.authToken;
+    if (token == undefined) {
+        $(".logoutLink").hide();
+        $(".profile").hide();
+        $(".login").show();
+        $(".register").show()
+    } else {
+        $(".logoutLink").show();
+        $(".profile").show();
+        $(".login").hide();
+        $(".register").hide()
+    }
+
     $.ajax({
         url: "/api/patients?token="+sessionStorage.authToken,
         method: "get"

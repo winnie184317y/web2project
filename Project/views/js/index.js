@@ -2,10 +2,18 @@ $(document).ready(function () {
     var token = sessionStorage.authToken;
     if (token == undefined) {
         $(".protectedSection").hide();
+        $(".logoutLink").hide();
+        $(".profile").hide();
         $(".unprotectedSection").show();
+        $(".login").show();
+        $(".register").show()
     } else {
         $(".protectedSection").show();
+        $(".logoutLink").show();
+        $(".profile").show();
         $(".unprotectedSection").hide();
+        $(".login").hide();
+        $(".register").hide()
     }
 
     $.ajax({

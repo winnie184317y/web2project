@@ -133,7 +133,7 @@ var database = {
         });
         newPatient.save(callback);
     },
-    updatePatientsDetails: function(id, fn, ln, c, h, w, p, u, callback){
+    updatePatientsDetails: function(id, fn, ln, c, h, w, u, p, callback){
         var updatedPatientsDetails = {
             firstName:fn,
             lastName:ln,
