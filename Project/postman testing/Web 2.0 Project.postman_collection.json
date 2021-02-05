@@ -1,0 +1,790 @@
+{
+	"info": {
+		"_postman_id": "075a48c3-315f-41a0-871a-4ae3f7e3c3a1",
+		"name": "Web 2.0 Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Wards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/wards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"wards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Appointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patients Records by Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/patientsrecords/patients?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patientsrecords",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5fde167869c97339a0b29a5b",
+							"type": "text"
+						},
+						{
+							"key": "wardClass",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Occupied",
+							"type": "text"
+						},
+						{
+							"key": "numOfBeds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "60kg",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "wardNo",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "tanahkow",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patients Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/patientsrecords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patientsrecords"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Wards",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5fde167869c97339a0b29a5b",
+							"type": "text"
+						},
+						{
+							"key": "wardClass",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Available",
+							"type": "text"
+						},
+						{
+							"key": "numOfBeds",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "60kg",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "wardNo",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "tanahkow",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/wards?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"wards"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Patients Details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Tan",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Tan",
+							"type": "text"
+						},
+						{
+							"key": "contactNo",
+							"value": "999",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "165cm",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "60kg",
+							"type": "text"
+						},
+						{
+							"key": "wardNo",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "room",
+							"value": "5b4da16164cc4043ac09321c",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "d1e55dcc55795488e00e97fead08ff494b56b1a19c2b7ef70652c63a8a5726d1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "_id",
+							"value": "5fde0bc269c97339a0b29a4f",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patients?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Appointment by Patients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/appointments/patients?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"appointments",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Appointments by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "web2admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "adminpass",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Jollyn",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "contactNumber",
+							"value": "87654321",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "checkinDate",
+							"value": "12-12-2021",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "checkoutDate",
+							"value": "20-12-2021",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "room",
+							"value": "5b4da16164cc4043ac09321c",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "d1e55dcc55795488e00e97fead08ff494b56b1a19c2b7ef70652c63a8a5726d1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "_id",
+							"value": "5fde0bc269c97339a0b29a4f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/appointments/patients?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3&id=5fde187169c97339a0b29a60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"appointments",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						},
+						{
+							"key": "id",
+							"value": "5fde187169c97339a0b29a60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Patients Records Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "medicalCondition",
+							"value": "Headache",
+							"type": "text"
+						},
+						{
+							"key": "admissionDate",
+							"value": "1st Feb 2020",
+							"type": "text"
+						},
+						{
+							"key": "updatedBy",
+							"value": "John Tan",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5fde128b69c97339a0b29a56",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patientsrecords?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patientsrecords"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "web2user",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "userpass",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "marylim",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Appointments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "web2user",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "userpass",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "startTime",
+							"value": "14:00",
+							"type": "text"
+						},
+						{
+							"key": "endTime",
+							"value": "16:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/appointments?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"appointments"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Appointment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "username",
+						"value": "web2user",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "userpass",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "startTime",
+							"value": "14:00",
+							"type": "text"
+						},
+						{
+							"key": "endTime",
+							"value": "16:30",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "601cf1a97630552cf4443bab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/appointments?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"appointments"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Patients Records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "medicalCondition",
+							"value": "Heart Attack",
+							"type": "text"
+						},
+						{
+							"key": "admissionDate",
+							"value": "14th Dec 2020",
+							"type": "text"
+						},
+						{
+							"key": "updatedBy",
+							"value": "John Tan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patientsrecords?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patientsrecords"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Patients Records",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "medicalCondition",
+							"value": "Heart Blockage",
+							"type": "text"
+						},
+						{
+							"key": "admissionDate",
+							"value": "14th Dec 2020",
+							"type": "text"
+						},
+						{
+							"key": "updatedBy",
+							"value": "John Tan",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "601cf304608751437c0ef042",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/patientsrecords?token=e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patientsrecords"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "e8d065b2a4b559639826752202b3ee5bca55a2ea0a001740f57f796c76e6f7a3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
